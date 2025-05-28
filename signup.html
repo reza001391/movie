@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="fa-IR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <title>دانلود فیلم</title>
+
+</head>
+
+<style>
+    @font-face {
+        font-family: "IRANSans";
+        src: url('fonts/IRANSans.eot');
+        src: url('fonts/IRANSans.eot?#iefix') format('embedded-opentype'),
+            url('fonts/IRANSans.woff2') format('woff2'),
+            url('fonts/IRANSans.woff') format('woff'),
+            url('fonts/IRANSans.ttf') format('truetype');
+    }
+
+
+    body {
+        direction: rtl;
+        font-family: "IRANSans";
+        margin: 0;
+        background-image: url(img/login-background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        Background-attachment: fixed;
+
+
+    }
+
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "IRANsans";
+        padding: 0;
+    }
+
+
+
+
+    #signup-row {
+        padding: 0;
+        margin: 0;
+
+    }
+
+
+    .signup {
+        overflow: hidden;
+        margin: 60px auto;
+        padding: 0;
+        position: relative;
+        width: 30em;
+        height: 40em;
+        background-color: #dfdfdf;
+        box-shadow: 0px 0px 8px 2px #585858ab;
+    }
+
+    .signup h3 {
+        color: #141414;
+        margin: 20px auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+
+    #signup-logo img {
+
+        margin-top: 10px;
+        position: relative;
+        width: 100%;
+
+    }
+
+
+    #signup-form {
+        margin: 30px auto;
+    }
+
+
+    #signup-form>div>input {
+        height: 3em;
+        width: 80%;
+        margin: 20px auto;
+        border-right: 3px solid crimson;
+
+    }
+
+    .form-group i {
+        font-size: 35px;
+        margin: -10px auto;
+        right: 0px;
+        position: absolute;
+        overflow: hidden;
+        color: #b11635;
+    }
+
+    #checkbox-signup {
+        text-align: right;
+    }
+
+    #checkbox-signup label {
+        position: relative;
+        padding: 0 32px;
+        margin: 0;
+        width: 100%;
+
+    }
+
+
+    #checkbox-signup input {
+        top: 5px;
+        position: relative;
+        margin: 5px auto;
+        right: 170px;
+        width: 20px;
+        height: 20px;
+
+    }
+
+    #checkbox-signup label a {
+        text-decoration: none;
+        position: relative;
+        right: 100px;
+        color: black;
+    }
+
+    #checkbox-signup label a:hover {
+        color: crimson;
+    }
+
+    #signup-btn {
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    #signup-btn button {
+        background-color: crimson;
+        border: none;
+        width: 70%;
+        height: 45px;
+
+    }
+
+    #signup-btn button:hover {
+        background-color: #b11635;
+    }
+
+    #go-signin-page {
+
+        text-align: center;
+    }
+
+    #go-signin-page a {
+
+        text-decoration: none;
+        color: crimson;
+    }
+
+    #go-signin-page a:hover {
+        color: rgb(170, 14, 45);
+    }
+
+    .copyright {
+        text-align: center;
+        color: white;
+    }
+    .copyright a{
+        text-decoration: none;
+        color: white;
+    }
+    .copyright a:hover{
+        color: #333333;
+    }
+</style>
+
+<body>
+
+    <noscript>لطفا جاوا اسکریپت مرورگر خود را فعال کنید</noscript>
+
+
+
+    <div class="row" id="signup-row">
+
+        <div class="signup">
+
+            <div class="wow fadeInLeft" id="signup-logo">
+
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+
+            </div>
+
+            <h3 class="wow fadeInRight">ثبت نام در سایت</h3>
+
+
+            <form action="#" id="signup-form">
+                <div class="form-group">
+
+
+                    <i class="bi bi-at wow zoomIn"></i>
+                    <input type="email" class="form-control  wow zoomIn " placeholder="ایمیل" name="email">
+
+
+                    <i class="bi bi-person-fill wow zoomIn""></i>
+                    <input type=" username" class="form-control wow zoomIn " placeholder="نام کاربری" name="username">
+
+
+                        <i class="bi bi-lock-fill wow zoomIn"></i>
+                        <input type="password" class="form-control wow zoomIn " placeholder="رمز عبور" name="password">
+
+
+                        <i class="bi bi-lock-fill wow zoomIn"></i>
+                        <input type="password" class="form-control wow zoomIn " placeholder="تکرار رمز عبور"
+                            name="password_verify">
+
+
+
+
+
+
+                        <div id="checkbox-signup" class="form-group form-check">
+
+                            <label class="form-check-label">
+
+                                <input class="form-check-input" type="checkbox" name="remember">با قوانین سایت موافقم
+
+
+                            </label>
+                        </div>
+
+                </div>
+
+                <div id="signup-btn" class="wow zoomIn">
+                    <button type="submit" class="btn btn-primary">ثبت نام</button>
+                </div>
+
+                <div id="go-signin-page">
+                    <p><a href="login.html">ورود</a> به حساب کاربری </p>
+
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        <p> © طراحی و توسعه توسط <a href="https://muhammadghanbari.ir/" target="_blank">محمد قنبری </a> و <a
+                href="http://rezaghanbarii.ir/" target="_blank">رضا
+                قنبری</a> </p>
+    </div>
+
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>
